@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className={`flex items-center justify-between glass rounded-full px-4 md:px-8 py-3 transition-all ${isScrolled ? 'shadow-2xl' : ''}`}>
           <div className="text-xl font-bold bg-gradient-to-r from-sky-400 to-indigo-400 bg-clip-text text-transparent">
-            AT.
+            Ash_Abir.
           </div>
           
           {/* Desktop Menu */}

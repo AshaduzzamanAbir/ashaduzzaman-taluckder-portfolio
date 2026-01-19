@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import myProfilePic from '../src/assets/ashaduzzaman-taluckder.jpg';
 
 const Hero: React.FC = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -36,9 +37,9 @@ const Hero: React.FC = () => {
         </div>
 
         <div className="relative inline-block mb-10" style={{ transform: `translateY(${avatarTranslateY}px)` }}>
-          <div className="w-44 h-44 md:w-56 md:h-56 rounded-[2.5rem] overflow-hidden glass p-2 rotate-3 hover:rotate-0 transition-all duration-700 cursor-pointer shadow-2xl mx-auto ring-1 ring-slate-200 dark:ring-slate-800">
+          <div className="w-52 h-52 md:w-56 md:h-56 rounded-[2.5rem] overflow-hidden glass p-2 rotate-3 hover:rotate-0 transition-all duration-700 cursor-pointer shadow-2xl mx-auto ring-1 ring-slate-200 dark:ring-slate-800">
             <img 
-              src="https://raw.githubusercontent.com/abirashaduzzaman/ashaduzzaman/main/profile.jpg" 
+              src={myProfilePic} 
               alt="Ashaduzzaman Taluckder" 
               className="w-full h-full object-cover rounded-[2rem] grayscale hover:grayscale-0 transition-all duration-700"
               onError={(e) => {
